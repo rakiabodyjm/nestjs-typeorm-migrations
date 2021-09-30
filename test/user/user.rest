@@ -1,0 +1,24 @@
+GET http://localhost:5000/user
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "name": "Janeo Miguel", 
+    "email": "janeomiguel@miguel.com",
+    "password": "rakiabodyjm4690"
+}
+
+### 
+PATCH http://localhost:5000/user/15
+Content-Type: application/json
+
+{
+    "name": "Miguel"
+}
+
+###
+GET http://localhost:5000/user/7
+
+###
+DELETE http://localhost:5000/user/7
