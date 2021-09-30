@@ -4,7 +4,7 @@
 
 ## REALM1000 NestJS Setup
 
-### **SQL Server**
+## **SQL Server**
 
 1. Installation of `SQL Server 2019` Developer Edition with `SQL Server Configuration Manager`
 2. Enable `TCP/IP` under `SQL Server Configuration` from `SQL Server Configuration Manager` to enable network connection.
@@ -12,7 +12,7 @@
    - _Server Name being your machine `localhost`_
    - _`sa` user being the `root` equivalence in MySQL_
 
-### **NestJS**
+## **NestJS**
 
 1. Install packages
 
@@ -40,17 +40,17 @@ $ yarn migration:run
 $ yarn dev
 ```
 
-## Test endpoints
+## **Test endpoints**
 
 - Must have VS Code Extension `Rest Client` installed
 - On VSCode navigate to test/\* and trigger rest endpoints
 
-## Stay in touch
+## **Stay in touch**
 
 Message me for concerns
 
 - [Miguel Tiongson](https://msng.link/o/?09498460475=vi)
 
-## License
+## **License**
 
 Nest is [MIT licensed](LICENSE).
