@@ -2,9 +2,7 @@
   <a href="#" target="blank"><img src="https://realm1000.com/_next/image?url=%2Fassets%2Ffooter%2Frealm1000.png&w=3840&q=75" width="240" alt="Nest Logo" /></a>
 </p>
 
-# **REALM1000 NESTJS SERVER BOILERPLATE**
-
-## Initial Setup
+## REALM1000 NestJS Setup
 
 ### **SQL Server**
 
