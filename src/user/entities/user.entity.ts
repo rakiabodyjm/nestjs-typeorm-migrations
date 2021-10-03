@@ -1,3 +1,4 @@
+import { Exclude } from 'class-transformer'
 import { Bcrypt } from 'src/utils/Bcrypt'
 import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
@@ -14,6 +15,7 @@ export class User {
   })
   email: string
 
+  @Exclude()
   @Column()
   password: string
 
