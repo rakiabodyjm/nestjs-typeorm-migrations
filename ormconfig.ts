@@ -22,7 +22,7 @@ const config: SqlServerConnectionOptions & {
   cli: {
     migrationsDir: 'src/db/migrations',
   },
-  synchronize: false,
+  synchronize: true,
 }
 
 export default config
