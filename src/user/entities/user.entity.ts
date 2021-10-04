@@ -1,6 +1,13 @@
 import { Exclude } from 'class-transformer'
+import { Book } from 'src/book/entities/book.entity'
 import { Bcrypt } from 'src/utils/Bcrypt'
-import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import {
+  BeforeInsert,
+  Column,
+  Entity,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm'
 
 @Entity()
 export class User {
@@ -26,4 +33,10 @@ export class User {
   updateUpdatedAt() {
     this.updated_at = new Date()
   }
+
+  @OneToMany((type) => Book, (book) => book.author, {
+    eager: true,
+    onDelete: 'SET NULL',
+  })
+  authored_books?: Book[]
 }

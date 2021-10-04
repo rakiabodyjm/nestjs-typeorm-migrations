@@ -73,4 +73,7 @@ export class UserService {
         throw err
       })
   }
+  clear() {
+    this.userRepo.clear()
+  }
 }
