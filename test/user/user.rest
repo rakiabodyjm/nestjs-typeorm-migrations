@@ -12,15 +12,17 @@ Content-Type: application/json
 }
 
 ### 
-PATCH http://localhost:5000/user/15
+PATCH http://localhost:5000/user/1
 Content-Type: application/json
 
 {
-    "name": "Miguel"
+    "name": "Miguel", 
+    "email": "rakiabodyjm@gmail.com", 
+    "password": "rakiabodyjm4690", 
 }
 
 ###
 GET http://localhost:5000/user/7
 
 ###
-DELETE http://localhost:5000/user/7
+DELETE http://localhost:5000/user
