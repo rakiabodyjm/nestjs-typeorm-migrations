@@ -8,13 +8,18 @@ import { UpdateUserDto } from './dto/update-user.dto'
 @Injectable()
 export class UserService {
   constructor(@InjectRepository(User) private userRepo: Repository<User>) {}
-  create(createUserDto: CreateUserDto) {
+  create(
+    createUserDto: CreateUserDto,
+  ): Promise<{ entity: User; message: string }> {
     const user = this.userRepo.create(createUserDto)
     console.log(user)
     return this.userRepo
       .save(user)
       .then((res) => {
-        return res
+        return {
+          message: 'User Created',
+          entity: res,
+        }
       })
       .catch((err) => {
         throw err
